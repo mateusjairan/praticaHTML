@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td,tr{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>AULA 02</h1>
+    <h1>Exemplos de utilização das tags</h1>
     <h2>Apresentação das listas</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, doloremque nobis error inventore amet.</p>
     <h3>Listas Ordenadas</h3>
@@ -49,5 +54,45 @@
     <p>I say, don't you know?<br>
         You say, you don't know
     </p>
+
+    <h2>Apresentação Tabelas</h2>
+
+    <table>
+        <!--titulo das colunas-->
+        <tr>
+            <td>coluna1</td>
+            <td>coluna2</td>
+            <td>coluna3</td>
+        </tr>
+        <!--Informações da tabela-->
+        <tr>
+            <td>Info Linha Col1</td>
+            <td>Info Linha Col2</td>
+            <td>Info Linha col3</td>
+        </tr>
+
+        <tr>
+            <td>Info Linha2 Col1</td>
+            <td>Info Linha2 Col2</td>
+            <td>Info Linha2 col3</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Info Linha3 Col1/2</td>
+            <td>Info Linha3 Col3</td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="2">Info Linha 4/5 col1</td>
+            <td>Info Linha 4 col2</td>
+            <td>Info Linha 4 col3</td>
+        </tr>
+        <tr>
+            <td>Info Linha 5 col2</td>
+            <td>Info Linha 5 col3</td>
+        </tr>
+
+    </table>
 </body>
 </html>
