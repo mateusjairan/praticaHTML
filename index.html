@@ -7,238 +7,207 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-
 <body class="bg-light">
 
-<header class="bg-secondary">
-
-<img src="geracaotechlogo.png" alt="Geração tech logo">
-
-<h1 class="justify-content-center d-flex">Geração Tech - Desenvolvimento Front-End</h1>
-
-<nav class=" navbar navbar-expand-lg navbar-light bg-light content-center d-flex">
-    <a href="#listas">Tags de Lista</a>
-    <a href="#tabelas">Tags  Tabelas</a>
-    <a href="#formularios">Tags de Formulários</a>
-    <a href="">Tags de Divisões</a>
-</nav>
-
+<header class="bg-secondary py-3">
+    <div class="container text-center">
+        <img src="geracaotechlogo.png" alt="Geração tech logo" class="mb-3">
+        <h1 class="text-white">Geração Tech - Desenvolvimento Front-End</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#listas">Tags de Lista</a>
+                <a class="nav-link" href="#tabelas">Tags Tabelas</a>
+                <a class="nav-link" href="#formularios">Tags de Formulários</a>
+                <a class="nav-link" href="#divisoes">Tags de Divisões</a>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main>
-
+<main class="container my-4">
     <h1>Exemplos de utilização das tags</h1>
 
-   <section id="listas">
-    <h2>Apresentação das listas</h2>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, doloremque nobis error inventore amet.</p>
+    <section id="listas" class="my-4">
+        <h2>Apresentação das listas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, doloremque nobis error inventore amet.</p>
 
-    <h3>Listas Ordenadas</h3>
-
-    <ol type="A">
-        <li>coisa</li>
-        <li>coisa</li>
-        <li>coisa</li>
-        <li>coisa</li>
-    </ol>
-
-    <h3>Listas não ordenadas</h3>
-
-    <ul>
-        <li>coisa</li>
-        <li>coisa</li>
-        <li>coisa</li>
-    </ul>
-    <h3>Continuação das listas ordenadas</h3>
-
-    <ol type="A" start="4">
-        <li>outra coisa</li>
-        <li>outra coisa</li>
-        <li>outra coisa</li>
-    </ol>
-
-    <h3>Listas de Definição</h3>
-
-
-    <dl>
-        <ol>
-            <li>
-        <dt>Café</dt>
-        <dd>Bebida, noramlmente quente, forte, rica em caféina,
-            adoçada ou não.
-            </li>
-            <li>
-        </dd>
-        <dt>Água</dt>
-        <dd>Liquido Primordial a vida. Sem água não há café</dd>
-            </li>
+        <h3>Listas Ordenadas</h3>
+        <ol type="A">
+            <li>coisa</li>
+            <li>coisa</li>
+            <li>coisa</li>
+            <li>coisa</li>
         </ol>
-    </dl>
 
-    <p>I say, don't you know?<br>
-        You say, you don't know
-    </p>
-   </section>
+        <h3>Listas não ordenadas</h3>
+        <ul>
+            <li>coisa</li>
+            <li>coisa</li>
+            <li>coisa</li>
+        </ul>
 
-   <section id="tabelas">
-    <h2>Apresentação Tabelas</h2>
+        <h3>Continuação das listas ordenadas</h3>
+        <ol type="A" start="4">
+            <li>outra coisa</li>
+            <li>outra coisa</li>
+            <li>outra coisa</li>
+        </ol>
 
-    <table>
-        <!--titulo das colunas-->
-        <tr>
-            <td>coluna1</td>
-            <td>coluna2</td>
-            <td>coluna3</td>
-        </tr>
-        <!--Informações da tabela-->
-        <tr>
-            <td>Info Linha Col1</td>
-            <td>Info Linha Col2</td>
-            <td>Info Linha col3</td>
-        </tr>
+        <h3>Listas de Definição</h3>
+        <dl>
+            <ol>
+                <li>
+                    <dt>Café</dt>
+                    <dd>Bebida, normalmente quente, forte, rica em cafeína, adoçada ou não.</dd>
+                </li>
+                <li>
+                    <dt>Água</dt>
+                    <dd>Líquido primordial à vida. Sem água não há café.</dd>
+                </li>
+            </ol>
+        </dl>
+        <p>I say, don't you know?<br>
+            You say, you don't know
+        </p>
+    </section>
 
-        <tr>
-            <td>Info Linha2 Col1</td>
-            <td>Info Linha2 Col2</td>
-            <td>Info Linha2 col3</td>
-        </tr>
+    <section id="tabelas" class="my-4">
+        <h2>Apresentação Tabelas</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>coluna1</th>
+                    <th>coluna2</th>
+                    <th>coluna3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Info Linha Col1</td>
+                    <td>Info Linha Col2</td>
+                    <td>Info Linha col3</td>
+                </tr>
+                <tr>
+                    <td>Info Linha2 Col1</td>
+                    <td>Info Linha2 Col2</td>
+                    <td>Info Linha2 col3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Info Linha3 Col1/2</td>
+                    <td>Info Linha3 Col3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Info Linha 4/5 col1</td>
+                    <td>Info Linha 4 col2</td>
+                    <td>Info Linha 4 col3</td>
+                </tr>
+                <tr>
+                    <td>Info Linha 5 col2</td>
+                    <td>Info Linha 5 col3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <tr>
-            <td colspan="2">Info Linha3 Col1/2</td>
-            <td>Info Linha3 Col3</td>
+    <section id="formularios" class="my-4">
+        <h2>Apresentação Formulários </h2>
+        <form>
+            <div class="mb-3">
+                <label for="texto" class="form-label">Rótulo da informação a ser inserida</label>
+                <input type="text" class="form-control" id="texto">
+            </div>
 
-        </tr>
+            <div class="mb-3">
+                <label for="meuID2" class="form-label">Teste de número</label>
+                <input type="number" class="form-control" id="meuID2" value="1000">
+            </div>
 
-        <tr>
-            <td rowspan="2">Info Linha 4/5 col1</td>
-            <td>Info Linha 4 col2</td>
-            <td>Info Linha 4 col3</td>
-        </tr>
-        <tr>
-            <td>Info Linha 5 col2</td>
-            <td>Info Linha 5 col3</td>
-        </tr>
+            <div class="mb-3">
+                <label for="email" class="form-label">Rótulo para e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
+            </div>
 
-    </table>
-   </section>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Rótulo para senha</label>
+                <input type="password" class="form-control" id="senha">
+            </div>
 
-   <section id="formularios">
-    <h2>Apresentação Formulários </h2>
-    <form action="#">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="lojafeminino" id="f">
+                <label class="form-check-label" for="f">Loja Departamento Feminina</label>
+            </div>
 
-        <label for="texto">
-            Rótulo da informação a ser inserida
-        </label>
-        <br>
-        <input type="text" name="" id="texto">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="lojamasculino" id="m">
+                <label class="form-check-label" for="m">Loja Departamento Masculino</label>
+            </div>
 
-        <br>
+            <div class="mb-3">
+                <label for="seleçãoUnica" class="form-label">Exemplo de seleção única</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selecaoUnica" id="um" value="1">
+                    <label class="form-check-label" for="um">Primeira Opção</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selecaoUnica" id="dois" value="2">
+                    <label class="form-check-label" for="dois">Segunda Opção</label>
+                </div>
+            </div>
 
-        <label for="meuID2">
-            teste de numero
-        </label>
-        <br>
-        <input type="number" value="1000">
+            <div class="mb-3">
+                <label for="testeSelect" class="form-label">Seleção por lista</label>
+                <select class="form-select" id="testeSelect">
+                    <option value="1" disabled>Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+            </div>
 
-        <br>
-        <label for="email">Rótulo para e-mail</label>
-        <br>
-        <input type="email" name="" id="email" placeholder="exemplo@email.com">
-        
-        <br>
-        <label for="senha">Rótulo para senha</label>
-        <br>
-        <input type="password" name="" id="senha">
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Texto</label>
+                <textarea class="form-control" id="textarea" rows="3" placeholder="xingue aqui"></textarea>
+            </div>
+        </form>
+    </section>
 
-        <br>
-        <label for="">Caixas de seleção</label>
-        <br>
-        <input type="checkbox" name="selecao" id="f" value="lojafeminino">
-        <label for="f">Loja Departamento Feminina</label>
-
-        <input type="checkbox" name="selecao" id="m" value="lojamasculino">
-        <label for="m">Loja Departamento Masculino</label>
-        <br>
-
-        <label for="">Exemplo de seleção unica</label>
-        <br>
-
-        <input type="radio" name="selecaoUnica" id="um" value="1">
-        <label for="1">Primeira Opção</label>
-        <br>
-
-        <input type="radio" name="selecaoUnica" id="dois" value="2">
-        <label for="1">Segunda Opção</label>
-        <br>
-
-        <label for="">Seleção por lista</label>
-        <br>
-        <select name="testeSelect" id="testeSelect">
-            <option value="1" disabled>Um</option>
-            <option value="2">Dois</option>
-            <option value="3">Três</option>
-        </select>
-
-        <br>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="xingue aqui"></textarea>
-
-    </form>
-   </section>
-
-   <section id="divisoes">
-    
-    <div class="div1">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, hic?
-    </div>
-
-    <div class="div2">
-        2
-    </div>
-
-    <div class="div3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium repellendus impedit reprehenderit omnis animi quas ab sed dicta nobis, libero optio dolorem quidem eveniet reiciendis quisquam. Deserunt maiores a quisquam, quam earum alias quae nam in, dicta eveniet ducimus nisi. Possimus cupiditate facilis sapiente, sed eveniet ipsa? Veritatis cumque provident eum sint. Autem sequi perspiciatis quasi maiores a earum. Laudantium voluptatibus accusantium voluptas necessitatibus voluptatem et, suscipit blanditiis. Molestias quis dolore voluptatibus sed? Iusto recusandae deleniti provident. Debitis iure id a exercitationem fugit corporis, necessitatibus tempore, ab similique nam sed, dolorem neque suscipit. Nesciunt mollitia accusantium quidem velit est.
-    </div>
-
-   </section>
-
-   <section>
-    <h2>Aplicação Flexbox</h2>
-
-    <div class="container">  <div class="itemFlex vermelho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, amet.</div>
-    <div class="itemFlex verde">2</div>
-    <div class="itemFlex azul">3</div>
-</div>
-
-  
-   </section>
-
-   <section>
-    <h2>Grid Bootstrap 5</h2>
-
-    <div>
-        <div class="row">
-            <div class="bg-danger col-1">4</div>
-            <div class="bg-info col-1">4</div>
-            <div class="bg-success col-6">6</div>
-            <div class="bg-warning col-6">4</div>
+    <section id="divisoes" class="my-4">
+        <div class="border p-3 mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, hic?
         </div>
-        <div></div>
-        <div></div>
-    </div>
-   </section>
+        <div class="border p-3 mb-3">
+            2
+        </div>
+        <div class="border p-3 mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium repellendus impedit reprehenderit omnis animi quas ab sed dicta nobis, libero optio dolorem quidem eveniet reiciendis quisquam. Deserunt maiores a quisquam, quam earum alias quae nam in, dicta eveniet ducimus nisi. Possimus cupiditate facilis sapiente, sed eveniet ipsa? Veritatis cumque provident eum sint. Autem sequi perspiciatis quasi maiores a earum. Laudantium voluptatibus accusantium voluptas necessitatibus voluptatem et, suscipit blanditiis. Molestias quis dolore voluptatibus sed? Iusto recusandae deleniti provident. Debitis iure id a exercitationem fugit corporis, necessitatibus tempore, ab similique nam sed, dolorem neque suscipit. Nesciunt mollitia accusantium quidem velit est.
+        </div>
+    </section>
 
-   
+    <section class="my-4">
+        <h2>Aplicação Flexbox</h2>
+        <div class="d-flex flex-wrap">
+            <div class="p-2 bg-danger text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, amet.</div>
+            <div class="p-2 bg-success text-white">2</div>
+            <div class="p-2 bg-primary text-white">3</div>
+        </div>
+    </section>
+
+    <section class="my-4">
+        <h2>Grid Bootstrap 5</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-1 bg-danger text-white">4</div>
+                <div class="col-1 bg-info text-white">4</div>
+                <div class="col-6 bg-success text-white">6</div>
+                <div class="col-4 bg-warning text-white">4</div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer>
-<p>Desenvolvido por Mateus Jairan.</p>
-<p>Aluno do projeto &copy;Geração Tech</p>
+<footer class="bg-secondary text-white text-center py-3">
+    <p>Desenvolvido por Mateus Jairan.</p>
+    <p>Aluno do projeto &copy; Geração Tech</p>
 </footer>
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
